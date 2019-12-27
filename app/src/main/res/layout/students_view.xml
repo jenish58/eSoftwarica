@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#2661D8"
+    >
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/softwarica"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_toEndOf="@+id/imgProfile"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:hint="Name of Student"/>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/name"
+        android:background="@drawable/trash"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/age"
+        android:layout_toEndOf="@+id/imgProfile"
+        android:layout_below="@+id/name"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:hint="Age of Student"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:layout_toEndOf="@+id/imgProfile"
+        android:layout_below="@+id/age"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:hint="Address of Student"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender"
+        android:layout_toEndOf="@+id/address"
+        android:layout_below="@+id/age"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="15dp"
+        android:hint="Gender"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/gender"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/delete"
+        android:background="@drawable/edit" />
+
+
+</RelativeLayout>
