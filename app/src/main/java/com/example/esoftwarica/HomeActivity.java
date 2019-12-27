@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         studentsList.add(new Students("Jenish Katila","Banepa","Male",25,R.drawable.a));
         studentsList.add(new Students("Ayesha Giri","Kathmandu","Female",24,R.drawable.b));
 
-
+//newchange
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListner =
